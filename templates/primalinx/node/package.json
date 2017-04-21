@@ -1,0 +1,28 @@
+{
+  "name": "[NAME]",
+  "version": "[VERSION]",
+  "description": "[DESCRIPTION]",
+  "copyright": "Copyright (C) [YEAR] Prima Health Solutions Pty Ltd. All rights reserved.",
+  "main": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/www",
+    "start:dev": "nodemon ./bin/www"
+  },
+  "author": "[AUTHOR]",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "body-parser": "~1.16.0",
+    "debug": "~2.6.0",
+    "dotenv": "^4.0.0",
+    "ejs": "~2.5.5",
+    "express": "~4.14.1",
+    "jaypha-mysql-ext": "^1.0.2",
+    "locutus": "^2.0.8",
+    "morgan": "~1.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

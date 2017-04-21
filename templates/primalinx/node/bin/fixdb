@@ -1,0 +1,32 @@
+#!/usr/bin/php
+<?php
+
+require "../php-paths.php";
+require "Jaypha/FixDB.php";
+require "Jaypha/FixDBTypes.php";
+require "properties.php";
+
+Jaypha\env(ROOT_DIR."/.env");
+
+$mysql = new Jaypha\DBMySQL
+(
+  getenv("MYSQL_HOST"),
+  getenv("MYSQL_USER"),
+  getenv("MYSQL_PASS"),
+  getenv("MYSQL_DBASE")
+);
+$fixdb = new Jaypha\FixDB($mysql);
+
+foreach (new DirectoryIterator(ROOT_DIR.'/database/mysql') as $fileInfo) {
+  if ($fileInfo->getExtension() == "php")
+    include $fileInfo->getPathname();
+}
+
+if (getenv("DEBUG") === false)
+  $fixdb->addClean();
+
+if ($argc > 1 && $argv[1] == "-x")
+  $fixdb->execute();
+else
+  $fixdb->show();
+
