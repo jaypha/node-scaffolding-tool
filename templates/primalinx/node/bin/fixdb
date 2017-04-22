@@ -1,9 +1,11 @@
 #!/usr/bin/php
 <?php
+//----------------------------------------------------------------------------
+// Sets include path for PHP
+//----------------------------------------------------------------------------
 
-require "../php-paths.php";
+require __dir__."/../php-paths.php";
 require "Jaypha/FixDB.php";
-require "Jaypha/FixDBTypes.php";
 require "properties.php";
 
 Jaypha\env(ROOT_DIR."/.env");
@@ -30,3 +32,8 @@ if ($argc > 1 && $argv[1] == "-x")
 else
   $fixdb->show();
 
+//----------------------------------------------------------------------------
+// Copyright (C) [YEAR] Jaypha.
+// License: BSL-1.0
+// Authors: Jason den Dulk
+//

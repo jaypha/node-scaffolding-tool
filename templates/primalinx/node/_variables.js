@@ -6,9 +6,10 @@
  * template files
  */
 
-module.exports = [
-  'name',
-  'version',
-  'description',
-  'author',
+module.exports = 
+[
+  { name: 'name', required: true },
+  { name: 'description' },
+  { name: 'author', default: 'Jason den Dulk' },
+  { name: 'copyright', default 'Prima Health Solutions Pty Ltd. All rights reserved.' }
 ];

@@ -2,7 +2,7 @@
   "name": "[NAME]",
   "version": "[VERSION]",
   "description": "[DESCRIPTION]",
-  "copyright": "Copyright (C) [YEAR] Prima Health Solutions Pty Ltd. All rights reserved.",
+  "copyright": "Copyright (C) [YEAR] [COPYRIGHT]",
   "main": "",
   "private": true,
   "scripts": {
@@ -11,7 +11,7 @@
     "start:dev": "nodemon ./bin/www"
   },
   "author": "[AUTHOR]",
-  "license": "UNLICENSED",
+  "license": "[LICENSE]",
   "dependencies": {
     "body-parser": "~1.16.0",
     "debug": "~2.6.0",

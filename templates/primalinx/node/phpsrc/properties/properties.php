@@ -35,6 +35,6 @@ function env($file)
 
 //----------------------------------------------------------------------------
 // Copyright (C) Jaypha.
-// Released under the Boost license.
+// License: BSL-1.0
 // Authors: Jason den Dulk
 //

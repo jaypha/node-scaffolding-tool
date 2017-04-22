@@ -13,6 +13,7 @@ function makeRouter(app)
 module.exports = makeRouter;
 
 //----------------------------------------------------------------------------
-// Copyright (C) [YEAR] Prima Health Solutions Pty Ltd. All rights reserved.
+// Copyright (C) [YEAR] [COPYRIGHT]
+// License: [LICENSE]
 // Authors: Jason den Dulk
 
